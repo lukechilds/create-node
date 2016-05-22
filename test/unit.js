@@ -27,3 +27,9 @@ test('DOM node should match markup', t => {
     t.is(childNode.textContent, expectedText[i]);
   });
 });
+
+test('DOM node should insert into DOM', t => {
+  const domNode = createNode('<div></div>');
+  document.body.appendChild(domNode)
+  t.is(document.body.lastChild, domNode);
+});
