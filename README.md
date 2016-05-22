@@ -4,7 +4,7 @@ Converts an HTML string to a DOM node.
 
 > ❗️**Important note**
 >
-> This library is intended for use in the browser but will work in any JS environment that implements the DOM, for example `jsdom` with node.
+> This module is intended for use in the browser and therefore requires a JS environment that implements the DOM. If you want to use it with node you'll also need `jsdom` or some other DOM implementation.
 
 ## Install
 
