@@ -1,7 +1,7 @@
 {
   "name": "create-node",
   "version": "0.1.1",
-  "description": "Converts an HTML string to a dom node",
+  "description": "Converts an HTML string to a DOM node",
   "main": "dist/create-node.js",
   "scripts": {
     "prebuild": "rm -rf dist",
