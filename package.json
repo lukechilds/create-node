@@ -4,7 +4,19 @@
   "description": "Converts an HTML string to a dom node",
   "main": "dist/create-node.js",
   "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "babel -d dist src",
+    "prebuild:map": "npm run prebuild",
+    "build:map": "babel --source-maps=true -d dist src",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
   },
   "repository": {
     "type": "git",
@@ -22,5 +34,10 @@
   "bugs": {
     "url": "https://github.com/lukechilds/create-node/issues"
   },
-  "homepage": "https://github.com/lukechilds/create-node#readme"
+  "homepage": "https://github.com/lukechilds/create-node#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0"
+  }
 }
