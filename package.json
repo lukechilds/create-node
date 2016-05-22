@@ -8,7 +8,8 @@
     "build": "babel -d dist src",
     "prebuild:map": "npm run prebuild",
     "build:map": "babel --source-maps=true -d dist src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "babel": {
     "presets": [
