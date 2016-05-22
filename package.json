@@ -1,6 +1,6 @@
 {
   "name": "create-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts an HTML string to a DOM node",
   "main": "dist/create-node.js",
   "scripts": {
