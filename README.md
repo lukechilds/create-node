@@ -15,7 +15,7 @@ npm install --save create-node
 or
 
 ```shell
-jspm install npm:create-node
+jspm install create-node
 ```
 
 ## Usage
