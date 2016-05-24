@@ -21,11 +21,6 @@
       "add-module-exports"
     ]
   },
-  "ava": {
-    "require": [
-      "./test/helpers/setup-browser-env.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukechilds/create-node.git"
@@ -50,6 +45,7 @@
     "babel-preset-es2015": "^6.9.0",
     "coveralls": "^2.11.9",
     "jsdom": "^9.1.0",
+    "node-browser-environment": "^1.0.2",
     "nyc": "^6.4.4"
   }
 }
