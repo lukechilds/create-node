@@ -10,6 +10,7 @@
     "build:map": "babel --source-maps=true -d dist src",
     "pretest": "npm run build:map",
     "test": "nyc ava test",
+    "lint": "eslint src",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run build"
   },
@@ -20,6 +21,13 @@
     "plugins": [
       "add-module-exports"
     ]
+  },
+  "eslintConfig": {
+    "extends": "lukechilds",
+    "rules": {
+      "semi": "off",
+      "newline-before-return": "off"
+    }
   },
   "repository": {
     "type": "git",
@@ -44,6 +52,8 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.9.0",
     "coveralls": "^2.11.9",
+    "eslint": "^2.11.1",
+    "eslint-config-lukechilds": "^1.3.0",
     "jsdom": "^9.1.0",
     "node-browser-environment": "^1.0.2",
     "nyc": "^6.4.4"
