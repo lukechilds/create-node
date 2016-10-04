@@ -1,5 +1,5 @@
 import test from 'ava';
-import browserEnv from 'node-browser-environment';
+import browserEnv from 'browser-env';
 import createNode from '../dist/create-node';
 
 browserEnv();
