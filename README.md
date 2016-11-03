@@ -4,7 +4,7 @@ Converts an HTML string to a DOM node.
 
 > ❗️**Important note**
 >
-> This module is intended for use in the browser and therefore requires a JS environment that implements the DOM. If you want to use it with node you'll need to provide your own DOM implementation such as [`jsdom`](https://github.com/tmpvar/jsdom).
+> This module is intended for use in the browser and therefore requires a JS environment that implements the DOM. If you want to use it with Node.js you'll need to provide your own DOM implementation such as [`jsdom`](https://github.com/tmpvar/jsdom).
 
 ## Install
 
