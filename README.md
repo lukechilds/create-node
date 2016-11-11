@@ -20,6 +20,8 @@ jspm install create-node
 
 ## Usage
 
+Passing in markup with one top level element will return an `HTMLElement` (or something that inherits from it e.g `HTMLDivElement`)
+
 ```js
 import createNode from 'create-node';
 
@@ -32,10 +34,26 @@ const markup = `
 const node = createNode(markup);
 // HTMLDivElement
 
-node.querySelector('span:last-child').textContent;
-// 'world'
+node.querySelector('span:first-child').textContent;
+// 'hello'
 
 document.body.appendChild(node);
+```
+
+Passing in markup with multiple top level elements will return an `HTMLCollection` of `HTMLElement`s.
+
+```js
+import createNode from 'create-node';
+
+const markup = `
+<span>hello</span>
+<span>world</span>`;
+
+const collection = createNode(markup);
+// HTMLCollection
+
+collection.querySelector('span:last-child').textContent;
+// 'world'
 ```
 
 ## License
