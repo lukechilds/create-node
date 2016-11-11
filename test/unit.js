@@ -8,9 +8,14 @@ test('createNode should be a function', t => {
   t.is(typeof createNode, 'function');
 });
 
-test('createNode(markup) should create an HTMLElement DOM node', t => {
+test('createNode(markup) with one top level element should create an HTMLElement DOM node', t => {
   const domNode = createNode('<div></div>');
   t.true(domNode instanceof HTMLElement);
+});
+
+test('createNode(markup) with multiple top level elements should create an HTMLCollection of HTMLElement DOM nodes', t => {
+  const domNode = createNode('<div></div><div></div>');
+  t.true(domNode instanceof HTMLCollection);
 });
 
 test('DOM node should match markup', t => {
