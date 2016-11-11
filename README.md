@@ -52,7 +52,7 @@ const markup = `
 const collection = createNode(markup);
 // HTMLCollection
 
-collection.querySelector('span:last-child').textContent;
+collection[1].textContent;
 // 'world'
 ```
 
