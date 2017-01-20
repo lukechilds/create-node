@@ -1,6 +1,10 @@
-# create-node [![Build Status](https://travis-ci.org/lukechilds/create-node.svg?branch=master)](https://travis-ci.org/lukechilds/create-node) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/create-node/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/create-node?branch=master)
+# create-node
 
 Converts an HTML string to a DOM node.
+
+[![Build Status](https://travis-ci.org/lukechilds/create-node.svg?branch=master)](https://travis-ci.org/lukechilds/create-node)
+[![Coverage Status](https://coveralls.io/repos/github/lukechilds/create-node/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/create-node?branch=master)
+[![npm](https://img.shields.io/npm/v/create-node.svg)](https://www.npmjs.com/package/create-node)
 
 > ❗️**Important note**
 >
