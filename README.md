@@ -1,7 +1,5 @@
 # create-node
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lukechilds/create-node.svg)](https://greenkeeper.io/)
-
 Converts an HTML string to a DOM node.
 
 [![Build Status](https://travis-ci.org/lukechilds/create-node.svg?branch=master)](https://travis-ci.org/lukechilds/create-node)
